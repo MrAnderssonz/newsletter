@@ -10,18 +10,19 @@ I andra ramverk är min kunskap begränsad så väljer du tex Angular så är kr
 I uppgiften kommer ni att få hantera läsning och presentation utav data på lite olika sätt då vi kombinerar en Headless front end med ett Monolit backend. 
 
 
-# G krav:
+## G krav:
 
-Backend:
+####Backend:
 * Administrationsvyn ska enbart nås från backend applikationen. 
 * En administratör skall kunna se en lista på samtliga användare samt en sträng (kommaseparerad) på alla mailadresser för dem som valt att prenumerera på nyhetsbrev.
-Frontend:
+
+####Frontend:
 * En besökare ska kunna registrerar sig som ny användare via frontend sidan.
 * Användaren ska sparas i en json fil på servern. 
 * En registerad användare ska kunna logga in med sina sparade uppgifter och ändra prenumerationsstatus (Ja/Nej).
 
 
-# VG krav:
+## VG krav:
 
 * Administrationsvyn i backend skall vara skyddad bakom en inloggning.
 * Det skall finnas en hårdkodad administratör med användarnamn "test" samt lösenordet "1234" för backend admin.
