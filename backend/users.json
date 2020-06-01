@@ -1,12 +1,32 @@
 [
   {
     "id": 1,
-    "userName": "Swain",
-    "mail": "sven@mail.com"
+    "userName": "Olof",
+    "mail": "kung@mail.com",
+    "subscription": true
   },
   {
     "id": 2,
     "userName": "Swain",
-    "mail": "sven@mail.com"
+    "mail": "sven@mail.com",
+    "subscription": true
+  },
+  {
+    "id": 3,
+    "userName": "Lotta",
+    "mail": "lotta@mail.com",
+    "subscription": false
+  },
+  {
+    "id": 3,
+    "userName": "Rasken",
+    "mail": "Rask@mail.com",
+    "subscription": true
+  },
+  {
+    "id": 5,
+    "userName": "Lisa",
+    "mail": "ls@mail.com",
+    "subscription": false
   }
 ]
