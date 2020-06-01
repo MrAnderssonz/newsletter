@@ -30,7 +30,8 @@ router.post('/', function(req, res, next) {
     {
       "id": req.body.id,
       "userName": req.body.userName,
-      "mail": req.body.mail
+      "mail": req.body.mail,
+      "subscription": req.body.subscription
     }
 
     users.push(newUser);
