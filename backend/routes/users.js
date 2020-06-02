@@ -1,7 +1,10 @@
 var express = require('express');
 var fs = require('fs');
+var CryptoJS = require('crypto-js');
 
 var router = express.Router();
+
+var saltKey = "unknownPleasures";
 
 router.get('/', function(req, res, next) {
   
@@ -26,11 +29,14 @@ router.post('/', function(req, res, next) {
     }
     var users = JSON.parse(data);
 
+    let password = CryptoJS.AES.encrypt(req.body.password, saltKey).toString();
+
     newUser = 
     {
       "id": req.body.id,
       "userName": req.body.userName,
       "mail": req.body.mail,
+      "password": password,
       "subscription": req.body.subscription
     }
 

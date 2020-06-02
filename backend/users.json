@@ -28,5 +28,12 @@
     "userName": "Lisa",
     "mail": "ls@mail.com",
     "subscription": false
+  },
+  {
+    "id": 6,
+    "userName": "Tom",
+    "mail": "tom@mail.se",
+    "password": "U2FsdGVkX1+CZXtDRshBqbP1C0eOIwAwihj7fr5/4U8=",
+    "subscription": true
   }
 ]

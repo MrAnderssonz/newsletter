@@ -82,7 +82,17 @@ function listUsers()
         for (let i = 0; i < json.length; i++)
         {
         console.log(json[i]);  
-        page.insertAdjacentHTML("beforeend","<div>Id: " + json[i].id + ", Namn: "+ json[i].userName +", Mail: "+ json[i].mail +", Prenumerationsstatus: "+ json[i].subscription +" </div>");
+        page.insertAdjacentHTML("beforeend",
+        `
+        <div>
+        <b>Id:</b> ${json[i].id}, 
+        <b>Namn:</b> ${json[i].userName}, 
+        <b>Mail:</b> ${json[i].mail},
+        <b>Password:</b> ${json[i].password} 
+        <b>Prenumerationsstatus:</b> ${json[i].subscription} 
+        </div>
+        `
+        );
         }
 
         page.insertAdjacentHTML("beforeend","<div><button onclick='adminMenu()'>Tillbaka till menyn</button></div>");
