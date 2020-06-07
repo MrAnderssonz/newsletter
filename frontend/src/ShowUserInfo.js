@@ -4,6 +4,7 @@ class ShowUserInfo extends React.Component {
   constructor(props) {
     super(props);
 
+    // To see if the subscription status is true or false
     if (localStorage.getItem("subStatus") === "true")
     {
         this.state = {isSub: true};
@@ -13,16 +14,18 @@ class ShowUserInfo extends React.Component {
         this.state = {isSub: false}
     }
     this.changeSub = this.changeSub.bind(this);
-    this.change = this.change.bind(this);
+    this.updateSub = this.updateSub.bind(this);
   }
 
+// Function to change the status of subscription
 changeSub = () =>
 {
     this.setState(({isSub: this.state.isSub ? false : true}), () =>
     localStorage.setItem("subStatus", (this.state.isSub) ));
 }
 
-change = () =>
+// Function to update the subscription status 
+updateSub = () =>
 {
     
     let id = localStorage.getItem("userId");
@@ -52,7 +55,7 @@ change = () =>
             <br></br>
             Nyhetsbrev: {this.state.isSub ? 'Ja' : 'Nej' }
             <br></br><button onClick={this.changeSub}>{this.state.isSub  ? "Sluta prenumerera" : "Börja prenumerera" } </button>
-            <br></br><button onClick={this.change}>Uppdatera </button>
+            <br></br><button onClick={this.updateSub}>Uppdatera </button>
         </div>
       );
     }

@@ -28,6 +28,7 @@ class Login extends React.Component {
       this.verifyLogin(this.state.name, this.state.pass)
   }
 
+  // To see if the user name and password is correct, if yes you get logged in
   verifyLogin = (userName, password) => 
   {
     var data = {userName: userName, password: password};
@@ -42,6 +43,7 @@ class Login extends React.Component {
     .then(response => response.json())
     .then(data => {
 
+        // if the inputs was correct it will save some informations 
         if(data.login)
         {
             this.props.getUser(data.userId);

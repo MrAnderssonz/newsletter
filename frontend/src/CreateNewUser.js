@@ -25,6 +25,8 @@ class CreateNewUser extends React.Component {
   {
       this.newUser(this.state.name, this.state.mail, this.state.pass, this.state.isSub)
   }
+  
+  // To post a new user 
   newUser = ( name, mail, pass, sub) =>
   {
     fetch("http://localhost:3100/users", 

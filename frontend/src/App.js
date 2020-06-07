@@ -19,19 +19,24 @@ class App extends React.Component {
   {
     this.setState({userId: inputId});
   }
-
+  // function to change status on the create new user from
   newUserForm = () =>
   {
     this.setState({showNewUserForm: this.state.showNewUserForm ? false : true})
   }
+
+  // function to log out nad clear info
   logOut = () =>
   {
     this.setState({userId: null})
     this.setState({showInfo: null})
+    this.setState({showNewUserForm: null})
     localStorage.removeItem("userId");
     localStorage.removeItem("userName");
     localStorage.removeItem("subStatus");
   }
+
+  // function to change the status on show info
   showInfo = () =>
   {
     this.setState({showInfo: this.state.showInfo ? false : true})

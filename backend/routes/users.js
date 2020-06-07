@@ -1,13 +1,14 @@
 var express = require('express');
 var fs = require('fs');
 var CryptoJS = require('crypto-js');
-//var cors = require('cors')
 
-//app.use(cors())
 var router = express.Router();
 
+// Nothing to see here, just keep walking
 var saltKey = "unknownPleasures";
 
+
+// To get all users
 router.get('/', function(req, res, next) {
   
   fs.readFile('users.json', (err, data) => 
@@ -22,6 +23,7 @@ router.get('/', function(req, res, next) {
 
 });
 
+// To create a new user
 router.post('/', function(req, res, next) {
   fs.readFile('users.json', (err, data) => 
   {
@@ -68,6 +70,7 @@ router.post('/', function(req, res, next) {
 
 });
 
+// To login and see if there is the username and password is correct
 router.post('/login', function(req, res) {
   fs.readFile('users.json', (err, data) => {
 
@@ -81,7 +84,6 @@ router.post('/login', function(req, res) {
     let userId = null;
     let subscription = false;
     
-    //let filtedUsers = users.filter(a => a.userName == req.body.userName)
     for(let i = 0; i<users.length; i++)
     {
   
@@ -104,6 +106,7 @@ router.post('/login', function(req, res) {
   })
 })
 
+// To change subscription status
 router.put('/:id', function(req, res, next) {
   
     fs.readFile('users.json', (err, data) => {
