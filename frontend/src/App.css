@@ -1,5 +1,13 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+.RedHead {
+  text-align: left;
+  color: rgb(173, 2, 2);
+}
+.NewUserForm
+{
+  background-color: darkgray;
 }
 
 .App-logo {

@@ -18,7 +18,7 @@ function logginPage()
     page.innerHTML = "";
     page.insertAdjacentHTML("beforeend", 
     `
-        <div>Inloggning</div>
+        <div>Admin inloggning</div>
         <div> Name:<input id='nameInput' type='text' ></input></div>
         <div>Lösenord: <input id='passInput' type='password'></input></div>
         <div><button id='loginButton'>Logga in</button></div>
@@ -69,7 +69,7 @@ function listUsers()
 {
     console.log("här var det användare!");
 
-    fetch("http://localhost:3000/users") // fixa rätt väg lokalt
+    fetch("http://localhost:3100/users") // fixa rätt väg lokalt
     .then(function(response)
     {
         return response.json();
@@ -102,7 +102,7 @@ function listUsers()
 function listUsersString()
 {
     console.log("här var det användare i en sträng!");
-    fetch("http://localhost:3000/users") // fixa rätt väg lokalt
+    fetch("http://localhost:3100/users") // fixa rätt väg lokalt
     .then(function(response)
     {
         return response.json();

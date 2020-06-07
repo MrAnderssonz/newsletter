@@ -1,39 +1,37 @@
 [
   {
     "id": 1,
-    "userName": "Olof",
-    "mail": "kung@mail.com",
-    "subscription": true
-  },
-  {
-    "id": 2,
-    "userName": "Swain",
-    "mail": "sven@mail.com",
-    "subscription": true
-  },
-  {
-    "id": 3,
-    "userName": "Lotta",
-    "mail": "lotta@mail.com",
+    "userName": "Ian curtis",
+    "mail": "ian@joydivision.com",
+    "password": "U2FsdGVkX1/RAX9gRu3i2EoLuxTFNGfIa00gfELtFGQ=",
     "subscription": false
   },
   {
+    "id": 2,
+    "userName": "Jarvis Cocker",
+    "mail": "jarvis@pulp.com",
+    "password": "U2FsdGVkX1+JagTkhiIBcLPqGzbc7rKJarQ8ZhqxEeI=",
+    "subscription": true
+  },
+  {
     "id": 3,
-    "userName": "Rasken",
-    "mail": "Rask@mail.com",
+    "userName": "Johnny Marr",
+    "mail": "marr@smiths.com",
+    "password": "U2FsdGVkX1/RChUACPwgwQvZgJiV+zRHTUd3j7gVUY8=",
+    "subscription": true
+  },
+  {
+    "id": 4,
+    "userName": "Alfred Hitchcock",
+    "mail": "affe@hitchcock.com",
+    "password": "U2FsdGVkX19xk68um8/0PETAuxPLaUcI/j26lIFf2Pg=",
     "subscription": true
   },
   {
     "id": 5,
-    "userName": "Lisa",
-    "mail": "ls@mail.com",
+    "userName": "Johan",
+    "mail": "johan@andersson.se",
+    "password": "U2FsdGVkX1++dzT9RM6aZsU7avwACpJPIRWZbjACaV0=",
     "subscription": false
-  },
-  {
-    "id": 6,
-    "userName": "Tom",
-    "mail": "tom@mail.se",
-    "password": "U2FsdGVkX1+CZXtDRshBqbP1C0eOIwAwihj7fr5/4U8=",
-    "subscription": true
   }
 ]
